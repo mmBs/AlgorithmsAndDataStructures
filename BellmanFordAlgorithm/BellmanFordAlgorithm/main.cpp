@@ -22,13 +22,6 @@ const double infinity = 10000;
 
 int predecessor[MAX_VORTEX];
 
-void route(int v2){
-    do {
-        cout<<v2+1<<" ";
-        v2 = predecessor[v2];
-    } while(predecessor[v2] != -1);
-    
-}
 
 int main(int argc, char** argv) {
     
@@ -56,26 +49,26 @@ int main(int argc, char** argv) {
     
     cout << "\n=====================================================\n" << endl;
     
-    for (int i = 0; i < MAX_VORTEX; i++) {
+    for (int i = 0; i < MAX_VERTICIES; i++) {
         predecessor[i] = -1;
     }
     
-    double distance[MAX_VORTEX];
+    double distance[MAX_VERTICIES];
     
-    for (int i = 1; i < MAX_VORTEX; i++) {
+    for (int i = 1; i < MAX_VERTICIES; i++) {
         distance[i] = infinity;
     }
     distance[0] = 0;
     
-    for (int i = 0; i < MAX_VORTEX; i++) {
+    for (int i = 0; i < MAX_VERTICIES; i++) {
         cout << "distance[" << i << "] = " << distance[i]
         << ", predecessor[i] = " << predecessor[i] << endl;
         
     }
     
-    cout << "\n===============ALGORYTM BELLMANA-FORDA===============\n" << endl;
+    cout << "\n===============BELLMAN-FORD'S ALGORITHM===============\n" << endl;
     
-    for (int j = 1; j < MAX_VORTEX - 1; j++) {
+    for (int j = 1; j < MAX_VERTICIES - 1; j++) {
         for (int i = 0; i < MAX_EDGES; i++) {
             Edge e = edge[i];
             if (distance[e.v1] > distance[e.v2] + e.weight) {
@@ -86,16 +79,9 @@ int main(int argc, char** argv) {
         }
     }
     
-    for (int i = 0; i < MAX_VORTEX; i++) {
-        cout << "Vortex[" << i << "]: distance[i] = " << distance[i]
-        << ", is the predecessor of Vortex[" << predecessor[i] << "]" << endl;
-    }
-    
-    cout << "\n=====================================================\n" << endl;
-    
-    
-    for (int i = 0; i < MAX_VORTEX; i++) {
-        route(i);
+    for (int i = 0; i < MAX_VERTICIES; i++) {
+        cout << "Vertex[" << i << "]: distance[i] = " << distance[i]
+        << ", is the predecessor of Vertex[" << predecessor[i] << "]" << endl;
     }
     
     cout << "\n=====================================================\n" << endl;
