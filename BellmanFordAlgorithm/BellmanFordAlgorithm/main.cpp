@@ -9,7 +9,7 @@
 #include <iostream>
 
 #define MAX_EDGES 11
-#define MAX_VORTEX 7
+#define MAX_VERTICIES 7
 
 using namespace std;
 
@@ -20,7 +20,7 @@ typedef struct {
 
 const double infinity = 10000;
 
-int predecessor[MAX_VORTEX];
+int predecessor[MAX_VERTICIES];
 
 
 int main(int argc, char** argv) {
