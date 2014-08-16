@@ -10,8 +10,8 @@ Algorithm
 
 Algorithm is quite simple. It can be done either recursively or iteratively:
 
-1. Get the middle element;
-2. If the middle element equals to the searched value, the algorithm stops;
+1. Get the middle element.
+2. If the middle element equals to the searched value, the algorithm stops.
 3. Otherwise, two cases are possible:
    - searched value is less, than the middle element. In this case, go to the step 1 for the part of the array, before middle element.
    - searched value is greater, than the middle element. In this case, go to the step 1 for the part of the array, after middle element.
@@ -23,9 +23,9 @@ The description comes from [AlgoList website.](http://www.algolist.net/Algorithm
 Performance
 ---------
 
-Worst case performance	O(log2 n)
-Best case performance	O(1)
-Average case performance	O(log2 n)
-Worst case space complexity	O(1)
+Worst case performance	O(log2 n)      
+Best case performance	O(1)     
+Average case performance	O(log2 n)    
+Worst case space complexity	O(1)    
 
 More info: [Wikipedia](http://en.wikipedia.org/wiki/Binary_search_algorithm)
