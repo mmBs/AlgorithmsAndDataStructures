@@ -18,6 +18,14 @@ Algorithm is quite simple. It can be done either recursively or iteratively:
 
 Now we should define, when iterations should stop. First case is when searched element is found. Second one is when subarray has no elements. In this case, we can conclude, that searched value doesn't present in the array
 
-The description comes from [AlgoList website](http://www.algolist.net/Algorithms/Binary_search)
+The description comes from [AlgoList website.](http://www.algolist.net/Algorithms/Binary_search)
+
+Performance
+---------
+
+Worst case performance	O(log2 n)
+Best case performance	O(1)
+Average case performance	O(log2 n)
+Worst case space complexity	O(1)
 
 More info: [Wikipedia](http://en.wikipedia.org/wiki/Binary_search_algorithm)
