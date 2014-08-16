@@ -7,4 +7,4 @@ Currently, there are 2 algorithms' implementations:
 
 1. [Bellman - Ford algorithm (C++)](https://github.com/mmBs/AlgorithmsAndDataStructures/tree/master/BellmanFordAlgorithm)
 2. [Monte Carlo algorithm which calculates the Pi number (C++)](https://github.com/mmBs/AlgorithmsAndDataStructures/tree/master/MonteCarloAlgorithmPi)
-3. Binary Search (C++ / Java)
+3. [Binary Search (C++ / Java)](https://github.com/mmBs/AlgorithmsAndDataStructures/tree/master/BinarySearch)
