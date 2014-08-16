@@ -127,3 +127,19 @@ xcuserdata
 # UNKNOWN: recommended by others, but I can't discover what these files are
 #
 # ...none. Everything is now explained.
+
+
+#### 
+# Java class files
+*.class
+
+####
+# IntelliJ
+/.idea/workspace.xml
+.idea/
+/*/out
+/build
+*.iml
+*.iws
+*.ipr
+*~
