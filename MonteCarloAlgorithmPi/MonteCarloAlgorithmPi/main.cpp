@@ -3,7 +3,6 @@
 //  MonteCarloAlgorithmPi
 //
 //  Created by Michal Bialas on 15/12/13.
-//  Copyright (c) 2013 Michal Bialas. All rights reserved.
 //
 
 #include <iostream>

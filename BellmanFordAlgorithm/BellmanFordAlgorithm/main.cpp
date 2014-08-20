@@ -3,7 +3,6 @@
 //  BellmanFordAlgorithm
 //
 //  Created by Michal Bialas on 16.10.2013.
-//  Copyright (c) 2013 Michal Bialas. All rights reserved.
 //
 
 #include <iostream>
