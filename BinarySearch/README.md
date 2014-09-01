@@ -29,3 +29,16 @@ Average case performance	O(log2 n)
 Worst case space complexity	O(1)    
 
 More info: [Wikipedia](http://en.wikipedia.org/wiki/Binary_search_algorithm)
+
+Java binarySearch() vs. Java contains() search
+---------
+
+A simple test based on an article from [Javarevisited](http://javarevisited.blogspot.com/2014/03/binary-search-vs-contains-performance.html).
+
+My results for 2-million records list:     
+Time to search 2M record using contains(): 16000 nanoseconds     
+Time to search 2M record using binarySearch(): 670000 nanoseconds    
+
+Conclusion:     
+contains() method is ~40 times faster than binary search, which means it make sense to use contains() for searching objects in List, especially for those which implement RandomAccess interface e.g. ArrayList.
+
