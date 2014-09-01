@@ -40,5 +40,5 @@ Time to search 2M record using contains(): 16000 nanoseconds
 Time to search 2M record using binarySearch(): 670000 nanoseconds    
 
 Conclusion:     
-contains() method is ~40 times faster than binary search, which means it make sense to use contains() for searching objects in List, especially for those which implement RandomAccess interface e.g. ArrayList.
+contains() method is ~40 times faster than the binary search, which means that it make sense to use contains() for searching objects in List, especially for those which implement RandomAccess interface e.g. ArrayList.
 
